@@ -1,0 +1,11 @@
+{
+  "porta": "COM4",
+  "monitor": "Meu monitor",
+  "overdrive": "Normal",
+  "warmup": "30",
+  "repeticoes": "20",
+  "intervalo": "0.3",
+  "janela_captura_ms": "100",
+  "exportar_dados_brutos": true,
+  "mostrar_raw": false
+}

@@ -1,0 +1,5 @@
+# Aplicação principal; versões ainda não fixadas por ensaio validado.
+pyserial
+pygame
+numpy
+matplotlib
