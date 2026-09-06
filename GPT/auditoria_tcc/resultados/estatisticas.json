@@ -1,0 +1,38 @@
+{
+  "amostras": 36000,
+  "capturas": 36,
+  "transicoes_reais": 30,
+  "adc_min": 384,
+  "adc_max": 2358,
+  "g2g_media_ms": 12.496119472712474,
+  "overshoot_media_pct": 10.7663544665312,
+  "taxa_media_min_sps": 9996.000352356967,
+  "taxa_media_max_sps": 10004.904154395877,
+  "maior_erro_replay_g2g_ms": 0.0004977097977096889,
+  "maior_erro_replay_overshoot_pct": 0.004918915947436098,
+  "monte_carlo": {
+    "repeticoes": 1000,
+    "seed": 20260906,
+    "amplitude_adc": 70,
+    "ruido_dp_adc": 12,
+    "g2g_verdadeiro_ms": 10.986122886681098,
+    "overshoot_verdadeiro_pct": 0,
+    "g2g_mediana_ms": 3.1,
+    "g2g_p05_p95_ms": [
+      1.0,
+      5.300000000000001
+    ],
+    "overshoot_mediana_pct": 51.34964535713935,
+    "overshoot_p05_p95_pct": [
+      41.125911638525494,
+      64.86073121857694
+    ]
+  },
+  "sha256_entradas": {
+    "resumo.csv": "c049c3dcf809f2876f48cdce9313a310198e86f81a74e3ef06b0ce621ba1406e",
+    "medidor.ino": "84714f5c279d12c2ced61f2893f030099aa1932ba17f9bc51dc0614f7609acde",
+    "dados_brutos.csv": "7a08e42ac890a80f22bebe5f2f7eb05fb6f6b35cea17af7b87d0c4b8b7019566",
+    "config_ensaio.json": "4d26a80ce39017fb06d9cf3a98a7ba702df4f466e7501fe12fe699e849a37091",
+    "analisador.py": "ead06edf5273b651d68be1277e2baed5b6a67f96684b651b8d1179cf727a4716"
+  }
+}

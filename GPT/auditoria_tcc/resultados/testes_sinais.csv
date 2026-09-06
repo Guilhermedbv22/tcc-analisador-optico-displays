@@ -1,0 +1,10 @@
+caso,esperado_ms,medido_ms,overshoot_pct,saturado,criterio,resultado
+exponencial_subida,10.986122886681098,11.100000000000001,5.94810465884285e-05,False,"erro <= 0,15 ms",OK
+exponencial_descida,10.986122886681098,11.100000000000001,5.9481046599797204e-05,False,"erro <= 0,15 ms",OK
+degrau_pequeno_20_contagens,10.986122886681098,0.0,0.0,False,medir ou invalidar; nunca 0 ms válido,FALHA: retorna métrica sem invalidar
+sem_transicao,,0.0,0.0,False,invalidar transição ausente,FALHA: retorna métrica sem invalidar
+pre_trigger_contaminado,16.0,14.5,0.0,False,detectar patamar inicial contaminado; rampa de 20 ms,FALHA: retorna métrica sem invalidar
+fim_nao_estabilizado,21.972245773362197,9.5,9.24838446577056,False,invalidar janela incompleta,FALHA: retorna métrica sem invalidar
+clipping_analogico_2400,10.986122886681098,4.0,0.0,False,sinalizar clipping analógico conhecido no teste,LIMITACAO/FALHA
+pico_isolado_antes_transicao,10.986122886681098,0.1,20.00017317660845,False,não confundir pico de uma amostra com transição,FALHA: retorna métrica sem invalidar
+uma_amostra_em_4095,10.986122886681098,11.100000000000001,259.5005188082562,False,sinalizar pico recortado para overshoot,LIMITACAO/FALHA

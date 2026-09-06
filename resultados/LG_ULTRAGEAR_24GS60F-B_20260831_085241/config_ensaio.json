@@ -1,0 +1,10 @@
+{
+  "porta": "COM5",
+  "monitor": "LG ULTRAGEAR 24GS60F-B",
+  "overdrive": "Fast",
+  "warmup": "5",
+  "repeticoes": "1",
+  "intervalo": "0.5",
+  "janela_captura_ms": "200",
+  "exportar_dados_brutos": true
+}

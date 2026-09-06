@@ -1,0 +1,6 @@
+caso,aceito,dt_ms,observacao
+pacote_normal,True,0.1,"Validação de transporte, sem hardware"
+pacote_sem_FIM,True,0.1,"Validação de transporte, sem hardware"
+ADC_fora_de_faixa,True,0.1,"Validação de transporte, sem hardware"
+duracao_negativa,True,-0.1,"Validação de transporte, sem hardware"
+janela_20ms_oferecida_pelo_firmware,False,,"Validação de transporte, sem hardware"
