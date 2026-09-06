@@ -20,6 +20,8 @@ O computador apresenta os estímulos em tela cheia, solicita capturas pela USB/s
 | `docs/auditorias/chatgpt/` | Material original da auditoria, suas entradas e resultados |
 | `docs/ORGANIZACAO.md` | Mapa dos arquivos e critérios de organização |
 | `docs/VERSIONAMENTO.md` | Como registrar e enviar novas versões |
+| `docs/SINCRONIZACAO.md` | Como manter PC e notebook atualizados pelo mesmo repositório |
+| `configs/notebook.example.json` | Perfil de configuração recebido do notebook |
 
 ## Executar no computador
 
@@ -72,6 +74,8 @@ Cada mensagem termina com nova linha. Uma captura retorna `META:<duracao_us>,<co
 Cada novo ensaio gera uma pasta em `resultados/`, contendo `resumo.csv`, `config_ensaio.json` e `dashboard.png`. A exportação de `dados_brutos.csv` depende da opção marcada na interface. As células do dashboard permitem abrir as curvas de cada transição.
 
 O ensaio arquivado de 31/08/2026 está em [resultados](resultados/LG_ULTRAGEAR_24GS60F-B_20260831_085241/). As entradas da auditoria são um conjunto preservado à parte e não devem ser substituídas pelos dados desse ensaio.
+
+O [ensaio do notebook](resultados/NOTEBOOK_20260831_162903/) também está preservado, com dados brutos, resumo, configuração e dashboard. A [integração do notebook](docs/SINCRONIZACAO.md) descreve a origem dos arquivos adicionais e a rotina de sincronização.
 
 Para repetir a auditoria offline, em Python 3.10 ou superior:
 

@@ -1,0 +1,11 @@
+{
+  "porta": "COM5",
+  "monitor": "NOTEBOOK",
+  "overdrive": "Normal",
+  "warmup": "30",
+  "repeticoes": "1",
+  "intervalo": "0.5",
+  "janela_captura_ms": "100",
+  "exportar_dados_brutos": true,
+  "mostrar_raw": true
+}
