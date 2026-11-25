@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Ao citar o Íris, indique a versão do componente consultado e o link permanente do commit."
+type: software
+title: "Íris — analisador óptico de displays"
+authors:
+  - family-names: "Ferrer Woellner Hoffmann"
+    given-names: "André"
+  - family-names: "Pereira Ramos da Silva"
+    given-names: "Andrei Felipe"
+  - family-names: "de Moura Valentim Bello"
+    given-names: "Guilherme"
+repository-code: "https://github.com/Guilhermedbv22/tcc-analisador-optico-displays"
+url: "https://tcc-iris.netlify.app/"

@@ -1,0 +1,5 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {combineParts} from '../public/campaign-reports.mjs';
+function part(n){return {id:String(n),title:'Ensaio · parte '+n+'/2',simulation:false,monitor:{model:'LG',refresh_hz:180,overdrive:'Fast'},conditions:{campaign_id:'a',campaign_step:'s',campaign_session:'t',campaign_dataset:'v',report_part:n,report_parts:2},results:[{origin:0,destination:32,repetition:n,valid:n===1,g2g_ms:n===1?4:null,overshoot_pct:n===1?1:null,acomodacao_ms:null}]};}
+test('reúne o ensaio completo com todas as capturas e médias que excluem inválidas',()=>{const p=part(1),r=combineParts(p,[p,part(2)]);assert.equal(r.results.length,2);assert.equal(r.summary.g2g_ms.mean,4);assert.equal(r.summary.valid,1);assert.equal(r.title,'Ensaio');});
+test('não reúne partes ausentes, conflitantes ou de outra revisão',()=>{const p=part(1);assert.throws(()=>combineParts(p,[]));const other=part(2);other.conditions.campaign_dataset='nova';assert.throws(()=>combineParts(p,[other]));other.conditions.campaign_dataset='v';other.results[0].repetition=1;assert.throws(()=>combineParts(p,[other]),/duplicadas/);});

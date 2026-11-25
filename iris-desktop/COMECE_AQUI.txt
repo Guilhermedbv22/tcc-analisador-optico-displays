@@ -1,0 +1,5 @@
+ÍRIS DESKTOP
+
+Execute iniciar_windows.bat para abrir o código-fonte com Python.
+Para gerar a distribuição Windows, use gerar_distribuicao_windows.bat.
+Leia docs/WINDOWS.md para instalar as ferramentas de geração.

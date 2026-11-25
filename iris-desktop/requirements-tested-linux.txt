@@ -1,0 +1,9 @@
+# Versões efetivamente verificadas no host Linux/Python 3.12. Não é lock multiplataforma.
+PySide6==6.12.0
+pyqtgraph==0.14.0
+numpy==2.3.5
+scipy==1.17.0
+pyserial==3.5
+matplotlib==3.10.8
+pytest==9.1.1
+pyinstaller==6.22.3

@@ -1,0 +1,89 @@
+﻿componente,pino,rede,observacao
+U1 MCP6022,1,OUT,
+U1 MCP6022,2,SUM,
+U1 MCP6022,3,GND,
+U1 MCP6022,4,GND,
+U1 MCP6022,5,MID,
+U1 MCP6022,6,OUT_B,
+U1 MCP6022,7,OUT_B,
+U1 MCP6022,8,3V3,
+U2 MCP3208,1,ADC_CH0,GND se sem uso; desconectar para teste de bancada
+U2 MCP3208,2,CH1,GND se sem uso; desconectar para teste de bancada
+U2 MCP3208,3,CH2,GND se sem uso; desconectar para teste de bancada
+U2 MCP3208,4,CH3,GND se sem uso; desconectar para teste de bancada
+U2 MCP3208,5,CH4,GND se sem uso; desconectar para teste de bancada
+U2 MCP3208,6,CH5,GND se sem uso; desconectar para teste de bancada
+U2 MCP3208,7,CH6,GND se sem uso; desconectar para teste de bancada
+U2 MCP3208,8,CH7,GND se sem uso; desconectar para teste de bancada
+U2 MCP3208,9,GND,
+U2 MCP3208,10,GPIO27,
+U2 MCP3208,11,GPIO23,
+U2 MCP3208,12,GPIO19,
+U2 MCP3208,13,GPIO18,
+U2 MCP3208,14,GND,
+U2 MCP3208,15,3V3,
+U2 MCP3208,16,3V3,
+Riso,1,OUT,100 Ω
+Riso,2,ADC_CH0,100 Ω
+RmidH,1,3V3,100 kΩ
+RmidH,2,MID,100 kΩ
+RmidL,1,MID,100 kΩ
+RmidL,2,GND,100 kΩ
+Cmid,1,MID,100 nF
+Cmid,2,GND,100 nF
+Cop,1,3V3,100 nF junto de U1.8/4
+Cop,2,GND,100 nF junto de U1.8/4
+Cadc,1,3V3,100 nF junto de U2.16/14
+Cadc,2,GND,100 nF junto de U2.16/14
+Cref,1,3V3,100 nF junto de U2.15/14
+Cref,2,GND,100 nF junto de U2.15/14
+Rcs,1,GPIO27,10 kΩ
+Rcs,2,3V3,10 kΩ
+D1 BPW34,A,GND,
+D1 BPW34,K,SUM,
+D2 BPW34,A,GND,
+D2 BPW34,K,SUM,
+Rbase,1,OUT,470 kΩ
+Rbase,2,SUM,470 kΩ
+Cbase,1,OUT,"4,7 pF C0G"
+Cbase,2,SUM,"4,7 pF C0G"
+R0,1,SUM,"52,3 kΩ"
+R0,2,X0,"52,3 kΩ"
+C0,1,SUM,"3,3 pF C0G"
+C0,2,X0,"3,3 pF C0G"
+R1,1,SUM,127 kΩ
+R1,2,X1,127 kΩ
+C1,1,SUM,"1,0 pF C0G"
+C1,2,X1,"1,0 pF C0G"
+R2,1,SUM,412 kΩ
+R2,2,X2,412 kΩ
+C2,1,SUM,"1,0 pF C0G"
+C2,2,X2,"1,0 pF C0G"
+U3 CD4066BE,1,OUT,
+U3 CD4066BE,2,X0,
+U3 CD4066BE,3,X1,
+U3 CD4066BE,4,OUT,
+U3 CD4066BE,5,CTRL1,
+U3 CD4066BE,6,CTRL2,
+U3 CD4066BE,7,GND,
+U3 CD4066BE,8,OUT,
+U3 CD4066BE,9,X2,
+U3 CD4066BE,10,GND,
+U3 CD4066BE,11,GND,
+U3 CD4066BE,12,GND,
+U3 CD4066BE,13,CTRL0,
+U3 CD4066BE,14,3V3,
+Rctrl0,1,GPIO32,330 Ω
+Rctrl0,2,CTRL0,330 Ω
+Rpd0,1,CTRL0,100 kΩ
+Rpd0,2,GND,100 kΩ
+Rctrl1,1,GPIO33,330 Ω
+Rctrl1,2,CTRL1,330 Ω
+Rpd1,1,CTRL1,100 kΩ
+Rpd1,2,GND,100 kΩ
+Rctrl2,1,GPIO26,330 Ω
+Rctrl2,2,CTRL2,330 Ω
+Rpd2,1,CTRL2,100 kΩ
+Rpd2,2,GND,100 kΩ
+C4066,1,3V3,100 nF junto de U3.14/7
+C4066,2,GND,100 nF

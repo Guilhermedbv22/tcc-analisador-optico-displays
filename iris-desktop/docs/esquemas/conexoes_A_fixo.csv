@@ -1,0 +1,51 @@
+﻿componente,pino,rede,observacao
+U1 MCP6022,1,OUT,
+U1 MCP6022,2,SUM,
+U1 MCP6022,3,GND,
+U1 MCP6022,4,GND,
+U1 MCP6022,5,MID,
+U1 MCP6022,6,OUT_B,
+U1 MCP6022,7,OUT_B,
+U1 MCP6022,8,3V3,
+U2 MCP3208,1,ADC_CH0,GND se sem uso; desconectar para teste de bancada
+U2 MCP3208,2,CH1,GND se sem uso; desconectar para teste de bancada
+U2 MCP3208,3,CH2,GND se sem uso; desconectar para teste de bancada
+U2 MCP3208,4,CH3,GND se sem uso; desconectar para teste de bancada
+U2 MCP3208,5,CH4,GND se sem uso; desconectar para teste de bancada
+U2 MCP3208,6,CH5,GND se sem uso; desconectar para teste de bancada
+U2 MCP3208,7,CH6,GND se sem uso; desconectar para teste de bancada
+U2 MCP3208,8,CH7,GND se sem uso; desconectar para teste de bancada
+U2 MCP3208,9,GND,
+U2 MCP3208,10,GPIO27,
+U2 MCP3208,11,GPIO23,
+U2 MCP3208,12,GPIO19,
+U2 MCP3208,13,GPIO18,
+U2 MCP3208,14,GND,
+U2 MCP3208,15,3V3,
+U2 MCP3208,16,3V3,
+Riso,1,OUT,100 Ω
+Riso,2,ADC_CH0,100 Ω
+RmidH,1,3V3,100 kΩ
+RmidH,2,MID,100 kΩ
+RmidL,1,MID,100 kΩ
+RmidL,2,GND,100 kΩ
+Cmid,1,MID,100 nF
+Cmid,2,GND,100 nF
+Cop,1,3V3,100 nF junto de U1.8/4
+Cop,2,GND,100 nF junto de U1.8/4
+Cadc,1,3V3,100 nF junto de U2.16/14
+Cadc,2,GND,100 nF junto de U2.16/14
+Cref,1,3V3,100 nF junto de U2.15/14
+Cref,2,GND,100 nF junto de U2.15/14
+Rcs,1,GPIO27,10 kΩ
+Rcs,2,3V3,10 kΩ
+D1 BPW34,A,GND,
+D1 BPW34,K,SUM,
+D2 BPW34,A,GND,
+D2 BPW34,K,SUM,
+Rf1,1,OUT,470 kΩ
+Rf1,2,SUM,470 kΩ
+Rf2,1,OUT,470 kΩ
+Rf2,2,SUM,470 kΩ
+Cf,1,OUT,"8,2 pF C0G"
+Cf,2,SUM,"8,2 pF C0G"

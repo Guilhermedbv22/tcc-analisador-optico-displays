@@ -1,0 +1,15 @@
+{
+  "version": "1.4.0",
+  "files": {
+    "installer": {
+      "name": "IrisDesktop-Setup-1.4.0-x64.exe",
+      "sha256": "d53fd6491c675348f3b421f683689b8a08b0504d32d5b421446160cb904531ee",
+      "bytes": 75223375
+    },
+    "portable": {
+      "name": "IrisDesktop-Portable-1.4.0-x64.zip",
+      "sha256": "db48d49477b3797c1431d2c71c045dac917c3ac35bda7d4e990eb787ea65e1d3",
+      "bytes": 114906132
+    }
+  }
+}

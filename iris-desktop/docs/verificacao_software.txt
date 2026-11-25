@@ -1,0 +1,11 @@
+EDIÇÃO IFTECH — 21/10/2026
+44 testes aprovados. Após ajuste de layout: 13 testes Qt/IFTECH aprovados.
+Ver documentação completa em IFTECH_VALIDACAO.md.
+
+REGISTRO ANTERIOR (Íris Desktop 1.0):
+....................This plugin does not support raise()
+.This plugin does not support raise()
+.This plugin does not support raise()
+...This plugin does not support propagateSizeHints()
+.............
+38 passed in 16.35s

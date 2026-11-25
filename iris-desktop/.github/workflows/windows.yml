@@ -1,0 +1,32 @@
+name: Distribuição Windows
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  desktop:
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          architecture: x64
+      - name: Instalar Inno Setup 6
+        shell: pwsh
+        run: |
+          $iscc = Join-Path ${env:ProgramFiles(x86)} 'Inno Setup 6\ISCC.exe'
+          if (!(Test-Path $iscc)) { choco install innosetup --yes --no-progress }
+      - name: Gerar portátil e instalador
+        shell: cmd
+        run: gerar_distribuicao_windows.bat
+      - name: Testes automatizados da aplicação
+        shell: cmd
+        env:
+          QT_QPA_PLATFORM: offscreen
+        run: .venv-build\Scripts\python.exe -m pytest -q
+      - uses: actions/upload-artifact@v6
+        with:
+          name: IrisDesktop-Windows-x64
+          path: dist-windows/
+          if-no-files-found: error

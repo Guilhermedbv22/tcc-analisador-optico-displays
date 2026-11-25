@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iris-desktop"
+dynamic = ["version"]
+description = "Instrumento de resposta óptica e bancada MCP3208"
+requires-python = ">=3.11,<3.14"
+dependencies = ["PySide6>=6.8,<6.13", "pyqtgraph>=0.13.7,<0.15", "numpy>=1.26,<3", "scipy>=1.12,<2", "pyserial>=3.5,<4", "matplotlib>=3.8,<4"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "pyinstaller>=6.11,<7"]
+
+[project.scripts]
+iris-desktop = "iris_desktop.__main__:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "iris_desktop.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["iris_desktop*"]
+
+[tool.setuptools.package-data]
+iris_desktop = ["assets/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

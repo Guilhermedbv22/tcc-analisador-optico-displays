@@ -1,0 +1,15 @@
+[
+  {
+    "source": "Iris_CIA_v2_20261008/nucleo.py",
+    "destination": "iris_desktop/core/nucleo.py",
+    "sha256_original": "7f560547cffa1e7f39753905609fdb4b75c228cfded239a022ded947b661d5be",
+    "status": "Adaptado na versão 1.2: análise 4.1.0, amplitude padrão de 4 códigos e tratamento do preto inicial junto ao rail. Hash original preservado para rastreabilidade.",
+    "sha256_atual": "1ae549cedc6299a40962d208d563e3c0077e8480cdfd17ba7a819c34aafe4481"
+  },
+  {
+    "source": "Iris_CIA_v2_20261008/protocolo.py",
+    "destination": "iris_desktop/core/protocolo.py",
+    "sha256_original": "f8b5fc43ee8b8a0e846754993cc771a5510d0dfa7587eb5a07e00ae766bb2c8a",
+    "status": "preservado sem alterações"
+  }
+]
